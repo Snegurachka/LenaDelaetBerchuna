@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:include schemaLocation="member.xsd"/>
-    <xsd:element name="groupAbout">
-        <xsd:complexType>
+    <xsd:complexType name="groupAbout">
             <xsd:sequence>
                 <xsd:element name="dateFounding" type="dateType"/>
                 <xsd:element name="styleMusic" type="xsd:string"/>
@@ -17,18 +16,17 @@
                 <xsd:element name="numberOfAlboms" type="xsd:integer"/>
                 <xsd:element name="numberOfSongs" type="xsd:integer"/>
                 <xsd:element name="compositions" minOccurs="1" maxOccurs="1">
-                <xsd:complexType>
-                    <xsd:sequence>
-                        <xsd:element name="composition" minOccurs="1" maxOccurs="unbounded">
-                        </xsd:element>
-                    </xsd:sequence>
-                </xsd:complexType>
-            </xsd:element>
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="composition" minOccurs="1" maxOccurs="unbounded">
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
                 <xsd:element name="dateDecay" type="dateType">
                 </xsd:element>
             </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
+    </xsd:complexType>
     <xsd:simpleType name ="dateType">
         <xsd:restriction base ="xsd:string">
             <xsd:pattern value ="\d{2}.\d{2}.\d{4}"></xsd:pattern>

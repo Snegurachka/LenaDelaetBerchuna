@@ -2,21 +2,19 @@
 <?xml-stylesheet type="text/xsl" href="machines.xsl"?>
 <groups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="group.xsd">
     <group name="Nightwish">
-        <groupAbout>
-            <dateFounding>25.10.1997</dateFounding>
-            <styleMusic>pppp</styleMusic>
-            <members>
-                <member>qwerty</member>
-                <member>qwerty2</member>
-                <member>qwerty3</member>
-            </members>
-            <numberOfAlboms>3</numberOfAlboms>
-            <numberOfSongs>10</numberOfSongs>
-            <compositions>
-                <composition>111</composition>
-                <composition>222</composition>
-            </compositions>
-            <dateDecay>26.10.2010</dateDecay>
-        </groupAbout>
+        <dateFounding>25.10.1997</dateFounding>
+        <styleMusic>pppp</styleMusic>
+        <members>
+            <member>qwerty</member>
+            <member>qwerty2</member>
+            <member>qwerty3</member>
+        </members>
+        <numberOfAlboms>3</numberOfAlboms>
+        <numberOfSongs>10</numberOfSongs>
+        <compositions>
+            <composition>111</composition>
+            <composition>222</composition>
+        </compositions>
+        <dateDecay>26.10.2010</dateDecay>
     </group>
 </groups>

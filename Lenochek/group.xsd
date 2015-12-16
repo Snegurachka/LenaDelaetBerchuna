@@ -9,18 +9,13 @@
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-    <xsd:element name="group">
+    <xsd:element name="group" >
         <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element ref="groupAbout">
-                    <xsd:complexType>
-                        <xsd:sequence>
-                            <xsd:element ref="groupAbout" minOccurs="1" maxOccurs="1"/>
-                        </xsd:sequence>
-                    </xsd:complexType>
-                </xsd:element>
-            </xsd:sequence>
-            <xsd:attribute name="name"/>
+            <xsd:simpleContent>
+                <xsd:extension base="groupAbout">
+                    <xsd:attribute name="name" type="xsd:string" />
+                </xsd:extension>
+            </xsd:simpleContent>
         </xsd:complexType>
     </xsd:element>
 </xsd:schema>
