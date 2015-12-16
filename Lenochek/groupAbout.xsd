@@ -17,18 +17,11 @@
                 <xsd:element name="compositions" minOccurs="1" maxOccurs="1">
                     <xsd:complexType>
                         <xsd:sequence>
-                            <xsd:element name="composition" minOccurs="1" maxOccurs="unbounded">
-                            </xsd:element>
+                            <xsd:element name="composition" minOccurs="1" maxOccurs="unbounded" />
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
-                <xsd:element name="dateDecay" type="dateType">
-                </xsd:element>
+                <xsd:element name="dateDecay" type="dateType" />
             </xsd:sequence>
     </xsd:complexType>
-    <xsd:simpleType name ="dateType">
-        <xsd:restriction base ="xsd:string">
-            <xsd:pattern value ="\d{2}.\d{2}.\d{4}"></xsd:pattern>
-        </xsd:restriction>
-    </xsd:simpleType>
 </xsd:schema>

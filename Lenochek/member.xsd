@@ -5,31 +5,10 @@
             <xsd:sequence>
                 <xsd:element name="name" type="xsd:string"/>
                 <xsd:element name="lastName" type="xsd:string"/>
-                <xsd:element name="dateBorn">
-                    <xsd:complexType>
-                        <xsd:simpleContent>
-                            <xsd:extension base="dateType">
-                            </xsd:extension>
-                        </xsd:simpleContent>
-                    </xsd:complexType>
-                </xsd:element>
-                <xsd:element name="dateV">
-                    <xsd:complexType>
-                        <xsd:simpleContent>
-                            <xsd:extension base="dateType">
-                            </xsd:extension>
-                        </xsd:simpleContent>
-                    </xsd:complexType>
-                </xsd:element>
+                <xsd:element name="dateBorn" type="dateType"/>
+                <xsd:element name="dateV" type="dateType"/>
                 <xsd:element name="position" type="xsd:string"/>
-                <xsd:element name="dateI">
-                    <xsd:complexType>
-                        <xsd:simpleContent>
-                            <xsd:extension base="dateType">
-                            </xsd:extension>
-                        </xsd:simpleContent>
-                    </xsd:complexType>
-                </xsd:element>
+                <xsd:element name="dateI" type="dateType"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>

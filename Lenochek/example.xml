@@ -5,7 +5,10 @@
         <dateFounding>25.10.1997</dateFounding>
         <styleMusic>pppp</styleMusic>
         <members>
-            <member>qwerty</member>
+            <member>
+                <lastName>test</lastName>
+                <name>test</name>
+            </member>
             <member>qwerty2</member>
             <member>qwerty3</member>
         </members>
