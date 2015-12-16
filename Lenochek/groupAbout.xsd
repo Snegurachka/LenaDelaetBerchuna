@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="member.xsd"/>
+    <xsd:element name="groupAbout">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="dateFounding">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="dateType">
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="members">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="member" minOccurs="1" maxOccurs="unbounded">
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="styleMusic" type="xsd:string"/>
+                <xsd:element name="composition" minOccurs="1" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="name" type="xsd:string"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="numberOfAlboms" type="xsd:integer"/>
+                <xsd:element name="numberOfSongs" type="xsd:integer"/>
+                <xsd:element name="dateDecay">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="dateType">
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:simpleType name ="dateType">
+        <xsd:restriction base ="xsd:string">
+            <xsd:pattern value ="\d{2}.\d{2}.\d{4}"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="cpu.xsd"/>
+    <xsd:include schemaLocation="gpu.xsd"/>
+    <xsd:include schemaLocation="storage.xsd"/>
+    <xsd:element name="machines">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="machine" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="machine">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="cpus">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element ref="cpu" minOccurs="1" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="gpus">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element ref="gpu" minOccurs="1" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="storages">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element ref="storage" minOccurs="1" maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="name"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="cpu">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="frequency" maxOccurs="1">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="xsd:string">
+                                <xsd:attribute name="units">
+                                    <xsd:simpleType>
+                                        <xsd:restriction base="xsd:string">
+                                            <xsd:enumeration value="MHz"/>
+                                            <xsd:enumeration value="GHz"/>
+                                        </xsd:restriction>
+                                    </xsd:simpleType>
+                                </xsd:attribute>
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="cores" type="xsd:integer"/>
+                <xsd:element name="cash" minOccurs="3" maxOccurs="3" default="0">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="xsd:integer">
+                                <xsd:attribute name="level">
+                                    <xsd:simpleType>
+                                        <xsd:restriction base="xsd:string">
+                                            <xsd:enumeration value="L1"/>
+                                            <xsd:enumeration value="L2"/>
+                                            <xsd:enumeration value="L3"/>
+                                        </xsd:restriction>
+                                    </xsd:simpleType>
+                                </xsd:attribute>
+                                <xsd:attribute name="units">
+                                    <xsd:simpleType>
+                                        <xsd:restriction base="xsd:string">
+                                            <xsd:enumeration value="B"/>
+                                            <xsd:enumeration value="kB"/>
+                                            <xsd:enumeration value="MB"/>
+                                        </xsd:restriction>
+                                    </xsd:simpleType>
+                                </xsd:attribute>
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                    <xsd:unique name="uniqueLevel">
+                        <xsd:selector xpath="cash"/>
+                        <xsd:field xpath="@level"/>
+                    </xsd:unique>
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="producer">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="Intel"/>
+                        <xsd:enumeration value="AMD"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="model" type="xsd:string"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

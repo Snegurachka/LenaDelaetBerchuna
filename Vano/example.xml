@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="machines.xsl"?>
+<machines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="machine.xsd">
+    <machine name="Home computer">
+        <cpus>
+            <cpu producer="Intel" model="Core i3">
+                <frequency units="GHz">
+                    2.4
+                </frequency>
+                <cores>
+                    4
+                </cores>
+                <cash level="L1" units="kB">
+                    32
+                </cash>
+                <cash level="L2" units="kB">
+                    256
+                </cash>
+                <cash level="L3">
+                    0
+                </cash>
+            </cpu>
+        </cpus>
+        <gpus>
+            <gpu producer="NVIDIA" model="GTX560ti">
+                <frequency type="memory" units="MHz">
+                    2600
+                </frequency>
+                <frequency type="gpu" units="MHz">
+                    1900
+                </frequency>
+                <memory type="GDDR5" units="MB">
+                    2048
+                </memory>
+            </gpu>
+        </gpus>
+        <storages>
+            <storage producer="WD" type="SSD">
+                <size>3.5</size>
+                <memsize units="GB">
+                    512
+                </memsize>
+            </storage>
+        </storages>
+    </machine>
+    <machine name="Server">
+        <cpus>
+            <cpu producer="Intel" model="Core i5">
+                <frequency units="GHz">
+                    3.2
+                </frequency>
+                <cores>
+                    4
+                </cores>
+                <cash level="L1" units="kB">
+                    32
+                </cash>
+                <cash level="L2" units="kB">
+                    256
+                </cash>
+                <cash level="L3" units="MB">
+                    2
+                </cash>
+            </cpu>
+            <cpu producer="Intel" model="Core i7">
+                <frequency units="GHz">
+                    3.8
+                </frequency>
+                <cores>
+                    8
+                </cores>
+                <cash level="L1" units="kB">
+                    64
+                </cash>
+                <cash level="L2" units="kB">
+                    512
+                </cash>
+                <cash level="L3" units="MB">
+                    5
+                </cash>
+            </cpu>
+        </cpus>
+        <gpus>
+            <gpu producer="NVIDIA" model="GTX670ti">
+                <frequency type="memory" units="MHz">
+                    3300
+                </frequency>
+                <frequency type="gpu" units="MHz">
+                    2400
+                </frequency>
+                <memory type="GDDR5" units="MB">
+                    4096
+                </memory>
+            </gpu>
+            <gpu producer="NVIDIA" model="GTX920ti">
+                <frequency type="memory" units="MHz">
+                    3800
+                </frequency>
+                <frequency type="gpu" units="MHz">
+                    3000
+                </frequency>
+                <memory type="GDDR5" units="MB">
+                    8194
+                </memory>
+            </gpu>
+        </gpus>
+        <storages>
+            <storage producer="Kingston" type="SSD">
+                <size>3.5</size>
+                <memsize units="GB">
+                    512
+                </memsize>
+            </storage>
+            <storage producer="Seagate" type="HDD">
+                <size>3.5</size>
+                <memsize units="TB">
+                    4
+                </memsize>
+            </storage>
+        </storages>
+    </machine>
+</machines>

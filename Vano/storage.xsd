@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="storage">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="size">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="formsizeType"/>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="memsize">
+                    <xsd:complexType>
+                        <xsd:simpleContent>
+                            <xsd:extension base="xsd:integer">
+                                <xsd:attribute name="units">
+                                    <xsd:simpleType>
+                                        <xsd:restriction base="xsd:string">
+                                            <xsd:enumeration value="GB"/>
+                                            <xsd:enumeration value="TB"/>
+                                        </xsd:restriction>
+                                    </xsd:simpleType>
+                                </xsd:attribute> 
+                            </xsd:extension>
+                        </xsd:simpleContent>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="type">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="HDD"/>
+                        <xsd:enumeration value="SSD"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:attribute>
+            <xsd:attribute name="producer"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:simpleType name ="formsizeType">
+        <xsd:restriction base ="xsd:string">
+            <xsd:pattern value ="\d{1}.\d{1}"></xsd:pattern>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

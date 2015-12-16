@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="machines.xsl"?>
+<groups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="group.xsd">
+    <group name="Nightwish">
+        <groupAbout>
+            <dateFounding>25.10.1997</dateFounding>
+            <styleMusic>pppp</styleMusic>
+            <composition>
+                <name>первый</name>
+                <name>второй</name>
+            </composition>
+            <numberOfAlboms>3</numberOfAlboms>
+            <numberOfSongs>10</numberOfSongs>
+            <dateDecay>26.10.2010</dateDecay>
+        </groupAbout>
+        <!--<members>-->
+            <!--<name>Имя</name>-->
+            <!--<lastName>Фамилия</lastName>-->
+            <!--<dateBorn>26.05.1997</dateBorn>-->
+            <!--<dateV>26.06.2001</dateV>-->
+            <!--<position>pfff</position>-->
+            <!--<dateI>23.09.9005</dateI>-->
+        <!--</members>-->
+    </group>
+</groups>
