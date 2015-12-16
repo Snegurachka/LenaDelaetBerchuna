@@ -5,21 +5,18 @@
         <groupAbout>
             <dateFounding>25.10.1997</dateFounding>
             <styleMusic>pppp</styleMusic>
-            <composition>
-                <name>первый</name>
-                <name>второй</name>
-            </composition>
+            <members>
+                <member>qwerty</member>
+                <member>qwerty2</member>
+                <member>qwerty3</member>
+            </members>
             <numberOfAlboms>3</numberOfAlboms>
             <numberOfSongs>10</numberOfSongs>
+            <compositions>
+                <composition>111</composition>
+                <composition>222</composition>
+            </compositions>
             <dateDecay>26.10.2010</dateDecay>
         </groupAbout>
-        <!--<members>-->
-            <!--<name>Имя</name>-->
-            <!--<lastName>Фамилия</lastName>-->
-            <!--<dateBorn>26.05.1997</dateBorn>-->
-            <!--<dateV>26.06.2001</dateV>-->
-            <!--<position>pfff</position>-->
-            <!--<dateI>23.09.9005</dateI>-->
-        <!--</members>-->
     </group>
 </groups>
