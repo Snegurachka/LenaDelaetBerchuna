@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="machines.xsl"?>
 <groups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="group.xsd">
-    <group name="Nightwish">
+    <group>
         <dateFounding>25.10.1997</dateFounding>
         <styleMusic>pppp</styleMusic>
         <members>
-            <member>
-                <lastName>test</lastName>
-                <name>test</name>
-            </member>
             <member>qwerty2</member>
             <member>qwerty3</member>
         </members>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <xsd:include schemaLocation="groupAbout.xsd"/>
+    <xsd:include schemaLocation="member.xsd"/>
     <xsd:element name="groups">
         <xsd:complexType>
             <xsd:sequence>
@@ -10,11 +10,27 @@
     </xsd:element>
     <xsd:element name="group" >
         <xsd:complexType>
-            <xsd:simpleContent>
-                <xsd:extension base="groupAbout">
-                    <xsd:attribute name="name" type="xsd:string" />
-                </xsd:extension>
-            </xsd:simpleContent>
+            <xsd:sequence>
+                <xsd:element name="dateFounding" type="dateType"/>
+                <xsd:element name="styleMusic" type="xsd:string"/>
+                <xsd:element name="members">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element ref="member"/>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="numberOfAlboms" type="xsd:integer"/>
+                <xsd:element name="numberOfSongs" type="xsd:integer"/>
+                <xsd:element name="compositions" minOccurs="1" maxOccurs="1">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="composition" minOccurs="1" maxOccurs="unbounded" />
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="dateDecay" type="dateType" />
+            </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 </xsd:schema>
