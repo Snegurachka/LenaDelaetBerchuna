@@ -5,7 +5,14 @@
         <dateFounding>25.10.1997</dateFounding>
         <styleMusic>pppp</styleMusic>
         <members>
-            <member>qwerty2</member>
+            <member>
+                <name>test</name>
+                <lastName>test</lastName>
+                <dateBorn>24.09.1990</dateBorn>
+                <dateV>23.09.2001</dateV>
+
+
+            </member>
             <member>qwerty3</member>
         </members>
         <numberOfAlboms>3</numberOfAlboms>
