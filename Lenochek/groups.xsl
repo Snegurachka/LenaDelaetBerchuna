@@ -56,8 +56,35 @@
                             </xsl:for-each>
                         </table>
                     </td>
+            </tr>
 
+            <tr>
+                <th rowspan="1">Количество альбомов</th>
+                <td align="center">
+                    <xsl:value-of select="numberOfAlboms"/>
+                </td>
+            </tr>
 
+            <tr>
+                <th rowspan="1">Количество песен</th>
+                <td align="center">
+                    <xsl:value-of select="numberOfSongs"/>
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="1">Песни</th>
+                <td align="center">
+                    <table>
+                        <xsl:for-each select ="compositions">
+                            <tr>
+                                <td>
+                                    <xsl:value-of select="composition"/>
+                                </td>
+                            </tr>
+                        </xsl:for-each>
+                    </table>
+                </td>
             </tr>
 
 
