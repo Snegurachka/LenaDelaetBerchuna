@@ -47,7 +47,7 @@
                 <th rowspan="1">Состав</th>
                     <td align="center">
                         <table>
-                            <xsl:for-each select ="members/member">
+                            <xsl:for-each select ="members/member/dateI[text()=' ']/..">
                                 <tr>
                                     <td>
                                         <xsl:value-of select="name"/>

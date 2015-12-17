@@ -22,6 +22,14 @@
                 <position>test</position>
                 <dateI>12.01.1900</dateI>
             </member>
+            <member>
+                <name>test23</name>
+                <lastName>test2</lastName>
+                <dateBorn>24.09.1990</dateBorn>
+                <dateV>23.09.2001</dateV>
+                <position>test</position>
+                <dateI> </dateI>
+            </member>
         </members>
         <numberOfAlboms>3</numberOfAlboms>
         <numberOfSongs>10</numberOfSongs>
