@@ -47,14 +47,11 @@
                 <th rowspan="1">Состав</th>
                     <td align="center">
                         <table>
-
+                            <xsl:for-each select ="members/member">
                                 <tr>
-                                    <xsl:value-of select="members/member/name"/>
+                                    <xsl:value-of select="name"/>
                                 </tr>
-                                <td>
-                                    <xsl:value-of select="members/member/name"/>
-                                </td>
-
+                            </xsl:for-each>
                         </table>
                     </td>
 
