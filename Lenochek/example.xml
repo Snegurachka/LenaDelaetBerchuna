@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="machines.xsl"?>
+<?xml-stylesheet type="text/xsl" href="groups.xsl"?>
 <groups xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="group.xsd">
     <group>
+        <nameGroup>Nitht</nameGroup>
         <dateFounding>25.10.1997</dateFounding>
         <styleMusic>pppp</styleMusic>
         <members>
@@ -10,10 +11,17 @@
                 <lastName>test</lastName>
                 <dateBorn>24.09.1990</dateBorn>
                 <dateV>23.09.2001</dateV>
-
-
+                <position>test</position>
+                <dateI>12.01.1900</dateI>
             </member>
-            <member>qwerty3</member>
+            <member>
+                <name>test2</name>
+                <lastName>test2</lastName>
+                <dateBorn>24.09.1990</dateBorn>
+                <dateV>23.09.2001</dateV>
+                <position>test</position>
+                <dateI>12.01.1900</dateI>
+            </member>
         </members>
         <numberOfAlboms>3</numberOfAlboms>
         <numberOfSongs>10</numberOfSongs>
