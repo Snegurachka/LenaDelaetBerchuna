@@ -59,7 +59,7 @@
             </tr>
 
             <tr>
-                <th rowspan="1">Количество альбомов</th>
+                <th rowspan="1">Количесто альбомов</th>
                 <td align="center">
                     <xsl:value-of select="numberOfAlboms"/>
                 </td>
@@ -76,10 +76,10 @@
                 <th rowspan="1">Песни</th>
                 <td align="center">
                     <table>
-                        <xsl:for-each select ="compositions">
+                        <xsl:for-each select ="compositions/composition">
                             <tr>
                                 <td>
-                                    <xsl:value-of select="composition"/>
+                                    <xsl:value-of select="."/>
                                 </td>
                             </tr>
                         </xsl:for-each>
