@@ -49,7 +49,9 @@
                         <table>
                             <xsl:for-each select ="members/member">
                                 <tr>
-                                    <xsl:value-of select="name"/>
+                                    <td>
+                                        <xsl:value-of select="name"/>
+                                    </td>
                                 </tr>
                             </xsl:for-each>
                         </table>
